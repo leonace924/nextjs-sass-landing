@@ -1,0 +1,59 @@
+@import '@/src/sass/Mixins.scss';
+@import '@/src/sass/Variables.scss';
+
+.button {
+  padding: rem(14) rem(16);
+  color: $white;
+  font-weight: 600;
+  font-size: rem(16);
+  line-height: rem(20);
+  letter-spacing: rem(1);
+  font-family: inherit;
+  border-radius: rem(30);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  border-width: 0;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary;
+    background-color: $white;
+  }
+
+  &.primary {
+    color: $white;
+    background-color: $primary;
+
+    &:hover {
+      background-color: rgba($primary, 0.85);
+    }
+  }
+
+  &.light {
+    color: $primary;
+    background-color: $white;
+
+    &:hover {
+      background-color: rgba($white, 0.9);
+    }
+  }
+
+  &.dark {
+    color: $white;
+    background-color: $black;
+
+    &:hover {
+      background-color: rgba($black, 0.7);
+    }
+  }
+
+  &.small {
+    padding: rem(8) rem(14);
+    font-size: rem(10);
+    line-height: rem(16);
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
