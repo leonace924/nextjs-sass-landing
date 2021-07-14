@@ -2,7 +2,7 @@
 @import '@/src/sass/Variables.scss';
 
 .button {
-  padding: rem(14) rem(16);
+  padding: rem(14) rem(18);
   color: $white;
   font-weight: 600;
   font-size: rem(16);
@@ -48,8 +48,8 @@
   }
 
   &.small {
-    padding: rem(8) rem(14);
-    font-size: rem(10);
+    padding: rem(10) rem(16);
+    font-size: rem(12);
     line-height: rem(16);
   }
 }
