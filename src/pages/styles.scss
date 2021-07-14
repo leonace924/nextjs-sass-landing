@@ -5,6 +5,10 @@
   font-weight: normal;
 }
 
+:focus {
+  outline: none;
+}
+
 html {
   scroll-behavior: smooth;
 }

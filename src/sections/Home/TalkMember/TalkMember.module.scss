@@ -1,0 +1,67 @@
+@import '@/src/sass/Mixins.scss';
+@import '@/src/sass/Variables.scss';
+
+.talkMember {
+  background-color: $primary;
+  padding: rem(70) 0;
+  @include breakpoint($large) {
+    padding: rem(140) 0;
+  }
+
+  &Wrapper {
+    @include grid-container;
+    width: 100%;
+  }
+
+  &Title {
+    h2 {
+      color: $white;
+      font-weight: 600;
+      font-size: rem(24);
+      margin-bottom: rem(26);
+      text-align: center;
+
+      @include breakpoint($large) {
+        font-size: rem(32);
+        margin-bottom: rem(40);
+      }
+
+      b {
+        font-weight: 600;
+        color: $black;
+      }
+    }
+  }
+
+  &Form {
+    max-width: rem(800);
+    margin: 0 auto;
+
+    &TwoCols {
+      margin-bottom: rem(24);
+      @include grid(2, 2);
+    }
+
+    &Group {
+      margin-bottom: rem(16);
+      @include breakpoint($large) {
+        margin-bottom: rem(24);
+      }
+    }
+
+    &Button {
+      text-align: center;
+      margin-bottom: rem(16);
+
+      &:last-of-type {
+        margin: 0;
+      }
+
+      button {
+        @include breakpoint($medium) {
+          width: rem(200);
+        }
+      }
+    }
+  }
+}

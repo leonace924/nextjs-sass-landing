@@ -67,6 +67,12 @@ const content = {
       },
     ],
   },
+  talkMember: {
+    title:
+      "<h2>Let's create an amazing event together. <br/> <b>Talk to a team member Today.</b></h2>",
+    ctaLabel: 'Download Guide',
+    ctaLink: '/',
+  },
 };
 
 export default content;

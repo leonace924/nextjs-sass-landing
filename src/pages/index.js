@@ -4,10 +4,11 @@ import Hero from '@/sections/Home/Hero/Hero';
 import Introduction from '@/sections/Home/Introduction/Introduction';
 import Experiences from '@/sections/Home/Experiences/Experiences';
 import Events from '@/sections/Home/Events/Events';
+import TalkMember from '@/sections/Home/TalkMember/TalkMember';
 import content from '@/src/utils/textContent';
 
 const Home = () => {
-  const { hero, introduction, experiences, events } = content;
+  const { hero, introduction, experiences, events, talkMember } = content;
 
   return (
     <Layout>
@@ -15,7 +16,7 @@ const Home = () => {
       <Introduction content={introduction} />
       <Experiences content={experiences} />
       <Events content={events} />
-      <div></div>
+      <TalkMember content={talkMember} />
     </Layout>
   );
 };
