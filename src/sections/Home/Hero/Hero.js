@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React from 'react';
 import { Button } from '@/components/Common/Common';
 import styles from './Hero.module.scss';
 

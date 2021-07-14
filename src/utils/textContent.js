@@ -36,6 +36,37 @@ const content = {
       },
     ],
   },
+  events: {
+    title: 'Brands that use happily for their events.',
+    ctaLabel: 'See Case Studies',
+    ctaLink: '/',
+    works: [
+      {
+        image: '/images/img-rd-4.jpg',
+      },
+      {
+        image: '/images/img-rd-5.jpg',
+      },
+      {
+        image: '/images/img-rd-1.jpg',
+      },
+      {
+        image: '/images/img-rd-2.jpg',
+      },
+      {
+        image: '/images/img-rd-3.jpg',
+      },
+      {
+        image: '/images/img-rd-5.jpg',
+      },
+      {
+        image: '/images/img-rd-4.jpg',
+      },
+      {
+        image: '/images/img-rd-5.jpg',
+      },
+    ],
+  },
 };
 
 export default content;

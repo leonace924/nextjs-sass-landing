@@ -1,0 +1,39 @@
+@import '@/src/sass/Mixins.scss';
+@import '@/src/sass/Variables.scss';
+
+.events {
+  padding: rem(80) 0;
+  @include breakpoint($large) {
+    padding: rem(140) 0;
+  }
+
+  &Wrapper {
+    @include grid-container;
+    width: 100%;
+
+    h2 {
+      color: $black;
+      font-weight: 600;
+      font-size: rem(24);
+      margin-bottom: rem(36);
+
+      @include breakpoint($large) {
+        font-size: rem(32);
+        margin-bottom: rem(60);
+      }
+    }
+  }
+
+  &List {
+    @include grid(2, 4);
+
+    &Image {
+      position: relative;
+    }
+  }
+
+  &Cta {
+    margin-top: rem(30);
+    text-align: center;
+  }
+}
