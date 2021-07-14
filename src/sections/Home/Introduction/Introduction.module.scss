@@ -1,0 +1,51 @@
+@import '@/src/sass/Mixins.scss';
+@import '@/src/sass/Variables.scss';
+
+.introduction {
+  background-color: $primary;
+  padding: rem(60) 0;
+  @include breakpoint($large) {
+    padding: rem(100) 0;
+  }
+
+  &Wrapper {
+    @include grid-container;
+    width: 100%;
+
+    @include breakpoint($medium) {
+      @include grid(2, 2, rem(60));
+      align-items: center;
+    }
+  }
+
+  &Image {
+    margin-bottom: rem(40);
+    border-radius: rem(30);
+    overflow: hidden;
+
+    @include breakpoint($medium) {
+      order: 1;
+      margin: 0;
+    }
+  }
+
+  &Text {
+    @include breakpoint($medium) {
+      order: 0;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: rem(22);
+      color: $white;
+      @include breakpoint($large) {
+        font-size: rem(28);
+      }
+
+      b {
+        font-weight: 600;
+        color: $black;
+      }
+    }
+  }
+}

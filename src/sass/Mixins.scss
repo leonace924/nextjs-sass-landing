@@ -12,7 +12,7 @@
   }
 }
 
-@mixin grid($mediumColumns: 1, $largeColumns: 2, $gridGap: rem(17)) {
+@mixin grid($mediumColumns: 1, $largeColumns: 2, $gridGap: rem(24)) {
   display: grid;
   gap: $gridGap;
   width: 100%;

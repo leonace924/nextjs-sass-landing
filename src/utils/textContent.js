@@ -6,6 +6,10 @@ const content = {
     ctaLabel: 'Get Started',
     ctaLink: '/',
   },
+  introduction: {
+    image: '/images/img-rd-1.jpg',
+    text: '<h3>Lorem ipsum dolor sit amet, consetetur adipiscing elit, sed do <b>eiusmod temporincididunt ut labore</b> et dolore magna aliqua.</h3>',
+  },
 };
 
 export default content;

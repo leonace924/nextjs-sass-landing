@@ -54,10 +54,11 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: rem(60);
+    bottom: rem(100);
 
     @include breakpoint($large) {
-      bottom: rem(100);
+      max-width: rem(1280);
+      bottom: rem(160);
     }
   }
 }
