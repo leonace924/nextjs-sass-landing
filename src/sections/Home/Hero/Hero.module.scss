@@ -1,0 +1,63 @@
+@import '@/src/sass/Mixins.scss';
+@import '@/src/sass/Variables.scss';
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  &Wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    h1 {
+      color: $white;
+      font-size: rem(32);
+      font-weight: 600;
+      margin-bottom: rem(10);
+      @include breakpoint($large) {
+        font-size: rem(48);
+      }
+    }
+
+    p {
+      color: $white;
+      font-size: rem(16);
+      margin-bottom: rem(18);
+      @include breakpoint($large) {
+        font-size: rem(20);
+      }
+    }
+
+    button {
+      width: rem(200);
+    }
+  }
+
+  &Content {
+    @include grid-container;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: rem(60);
+
+    @include breakpoint($large) {
+      bottom: rem(100);
+    }
+  }
+}
