@@ -1,0 +1,64 @@
+@import '@/src/sass/Mixins.scss';
+@import '@/src/sass/Variables.scss';
+
+.hamburger {
+  @include breakpoint($x-large) {
+    display: none;
+  }
+
+  &Icon {
+    width: rem(20);
+    height: rem(18);
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    span {
+      display: block;
+      position: absolute;
+      height: rem(2);
+      width: 100%;
+      background: $white;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0;
+        transform-origin: left center;
+      }
+
+      &:nth-child(2) {
+        top: rem(7);
+        transform-origin: left center;
+      }
+
+      &:nth-child(3) {
+        top: rem(14);
+        transform-origin: left center;
+      }
+    }
+
+    &Open {
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg);
+          left: rem(2);
+        }
+
+        &:nth-child(2) {
+          width: 0%;
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+          top: rem(14);
+          left: rem(2);
+        }
+      }
+    }
+  }
+}

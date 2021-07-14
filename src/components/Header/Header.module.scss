@@ -59,15 +59,27 @@
   }
 
   &Menu {
+    display: none;
     margin-left: rem(40);
-    display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
     gap: rem(40);
+    @include breakpoint($medium) {
+      display: inline-grid;
+    }
+  }
+
+  &MobileIcon {
+    @include breakpoint($large) {
+      display: none;
+    }
   }
 
   &Buttons {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    gap: rem(26);
+    display: none;
+    @include breakpoint($large) {
+      display: inline-grid;
+      grid-template-columns: 1fr 1fr;
+      gap: rem(26);
+    }
   }
 }

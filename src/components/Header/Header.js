@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/Common/Common';
+import HamburgerIcon from '@/components/HamburgerIcon/HamburgerIcon';
 import styles from './Header.module.scss';
 
 const Header = () => {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+
   return (
     <div className={styles.header}>
       <div className={styles.nav}>
@@ -38,6 +41,13 @@ const Header = () => {
           <Button size="small" color="dark">
             Download Guide
           </Button>
+        </div>
+
+        <div className={styles.navMobileIcon}>
+          <HamburgerIcon
+            isOpen={showMobileMenu}
+            onClick={() => setShowMobileMenu(!showMobileMenu)}
+          />
         </div>
       </div>
     </div>
