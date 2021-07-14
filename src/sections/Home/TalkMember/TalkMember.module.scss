@@ -58,9 +58,7 @@
       }
 
       button {
-        @include breakpoint($medium) {
-          width: rem(200);
-        }
+        width: rem(200);
       }
     }
   }
