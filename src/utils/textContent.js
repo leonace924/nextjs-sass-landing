@@ -10,6 +10,32 @@ const content = {
     image: '/images/img-rd-1.jpg',
     text: '<h3>Lorem ipsum dolor sit amet, consetetur adipiscing elit, sed do <b>eiusmod temporincididunt ut labore</b> et dolore magna aliqua.</h3>',
   },
+  experiences: {
+    title: 'Experiences that we produce.',
+    features: [
+      {
+        image: '/images/img-rd-2.jpg',
+        label: 'Virtual',
+        description:
+          'Nam hendrerit nisi sed sollicitudin eut. Nunc posuere purus rhoncus pulvinar aliquam.',
+        link: '/',
+      },
+      {
+        image: '/images/img-rd-3.jpg',
+        label: 'Onsite',
+        description:
+          'Nam hendrerit nisi sed sollicitudin eut. Nunc posuere purus rhoncus pulvinar aliquam.',
+        link: '/',
+      },
+      {
+        image: '/images/img-rd-4.jpg',
+        label: 'Hybrid',
+        description:
+          'Nam hendrerit nisi sed sollicitudin eut. Nunc posuere purus rhoncus pulvinar aliquam.',
+        link: '/',
+      },
+    ],
+  },
 };
 
 export default content;

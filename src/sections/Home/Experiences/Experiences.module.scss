@@ -1,0 +1,32 @@
+@import '@/src/sass/Mixins.scss';
+@import '@/src/sass/Variables.scss';
+
+.experiences {
+  background-color: $white;
+  padding: rem(60) 0;
+  @include breakpoint($large) {
+    padding: rem(100) 0;
+  }
+
+  &Wrapper {
+    @include grid-container;
+    width: 100%;
+
+    h2 {
+      color: $black;
+      font-weight: 600;
+      font-size: rem(24);
+      margin-bottom: rem(26);
+
+      @include breakpoint($large) {
+        font-size: rem(32);
+        margin-bottom: rem(40);
+      }
+    }
+  }
+
+  &Details {
+    @include grid(3, 3);
+    row-gap: rem(40);
+  }
+}

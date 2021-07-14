@@ -1,0 +1,28 @@
+@import '@/src/sass/Mixins.scss';
+@import '@/src/sass/Variables.scss';
+
+.experienceCard {
+  &Image {
+    border-radius: rem(20);
+    overflow: hidden;
+    margin-bottom: rem(12);
+  }
+
+  h3 {
+    color: $black;
+    font-size: rem(20);
+    font-weight: 600;
+    margin-bottom: rem(8);
+  }
+
+  p {
+    color: $black;
+    margin-bottom: rem(12);
+  }
+
+  &Cta {
+    @include breakpoint($large) {
+      text-align: center;
+    }
+  }
+}
