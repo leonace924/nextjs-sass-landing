@@ -1,6 +1,9 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import Layout from '@/components/Layout/Layout';
 
 export default function Home() {
-  return <></>;
+  return (
+    <Layout>
+      <div></div>
+    </Layout>
+  );
 }
