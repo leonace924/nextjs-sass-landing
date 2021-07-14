@@ -18,11 +18,20 @@
   p {
     color: $black;
     margin-bottom: rem(12);
+    @include breakpoint($large) {
+      margin-bottom: rem(20);
+    }
   }
 
   &Cta {
     @include breakpoint($large) {
       text-align: center;
+    }
+
+    button {
+      @include breakpoint($large) {
+        width: rem(200);
+      }
     }
   }
 }
